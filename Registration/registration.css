@@ -70,3 +70,8 @@ button:hover {
         padding: 20px;
     }
 }
+
+#errorMail{
+    color: red;
+    text-align: end;
+}

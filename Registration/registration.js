@@ -5,10 +5,23 @@ let email=document.getElementById("email").value;
 let phone=document.getElementById("phone").value;
 let password=document.getElementById("password").value;
 
-                console.log(name);
-                console.log(email);
-                console.log(phone);
-                console.log(password);
+let errorMail=document.getElementById("errorMail");
+
+let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if(!emailPattern.test(email)){
+    // alert("Invalid email");
+    errorMail.textContent="Invalid Email......";
+    return;
+}else{
+    errorMail.textContent=" ";
+}
+
+                // console.log(name);
+                // console.log(email);
+                // console.log(phone);
+                // console.log(password);
+
                 
                 
                 let userData={

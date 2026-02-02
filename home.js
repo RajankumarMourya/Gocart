@@ -26,12 +26,12 @@ function displayProduct(prod){
         <div id="title"><h3>${val.title}</h3></div>
 
         <div id="ratingBox">
-            <p>Rating:${val.rating}</p>
-            <p> &#8377;${Math.round((val.price)*99)}</p>
+            <p id="rating"><b>Rating:${val.rating}</b></p>
+            <p> <b>&#8377;${Math.round((val.price)*99)} </b></p>
         </div>
-
+          
         <div id="detailBox">
-        <p>InStock:${val.stock}</p>
+        <p><b>InStock:${val.stock}</b></p>
         <button onclick="details(${val.id})">Details</button>
         </div>
         </main>
