@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 72px;
+    width: 75%;
+    border: 1px solid gray;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    gap: 15px;
+    padding: 28px;
+    border-radius: 23px;
+    box-shadow: 0 0 8px rgb(0,0,0.01);
+    transform: all 0.3s linear;
+}
+nav:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 8px rgb(0,0,0.01);
+
+}
+
+nav #navigation_option{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+#navigation_option a{
+    text-decoration: none;
+    color: rgb(78,75,75);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 5px;
+
+}
+nav #logo>h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+nav #logo>h1::first-letter{
+    color: orangered;
+    font-size: 35px;
+}
+
+#search_box{
+    width: 300px;
+    height: 42px;
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 25px;
+}
+
+#search_box input{
+    height: 100%;
+    width: 258px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: 20px;
+
+}
+
+#search_box #search_logo{
+    height: 42px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 0 25px 25px 0;
+    color: white;
+    font-size: 18px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    transition: width 0.5s ease;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+#navigation_option a:hover{
+         color: blue;
+}
+
+#search_box:focus-within{
+    box-shadow: 0px 0px 10px rgb(108,101,185);
+}
+
+#cart:hover{
+    transition: all 0.3s linear;
+    color: blue;
+}
+
+
+#productContainer {
+
+margin-top: 120px;
+padding: 30px;
+background-color: rgb(27, 114, 121);
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+
+}
+
+
+#productContainer main{
+height: 400px;
+width: 350px;
+background-color: rgb(251, 250, 250);
+
+}
+#productContainer main #title{
+   display: flex;
+   justify-content: center;
+}
+#productContainer main #image{
+
+background-color: rgb(183, 173, 173);
+}
+
+#productContainer main #detailBox{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#productContainer main #ratingBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+
