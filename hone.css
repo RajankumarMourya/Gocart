@@ -190,7 +190,7 @@ overflow: hidden;
 }
 
 /* !------Responsive------------- */
- #groups{ 
+ /* #groups{ 
     height: 35px; 
     width: 40px; 
     display: flex; 
@@ -231,4 +231,4 @@ width: 90%; height: auto; padding: 15px 30px 0 30px; flex-wrap: wrap; gap: 15px;
             #cart{ width: 100%; padding-left: 320px; 
             
             
-            } }
+            } } */
