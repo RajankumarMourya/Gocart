@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded",()=>{
         if(selectedProduct){
             productDetails.innerHTML=`
             <main>
+              <div id="frist-half">
+
             <div><img src ="${selectedProduct.thumbnail}"/>
             </div>
             
@@ -23,25 +25,25 @@ document.addEventListener("DOMContentLoaded",()=>{
             <p><b>Description:</b>${selectedProduct.description}</p>
             
 
-            <div><b>Price  &#8377;</b>  ${Math.round((selectedProduct.price)*99)}  </div>
+            <div><b>Price  &#8377; <span  style="color:red"> ${Math.round((selectedProduct.price)*99)} </span> </b></div>
             
             <button id="btn1" class="btn">Add to cart</button>
             <button id="btn2" class="btn">Back to Home</button>         
 
             </div> 
-            
+            </div>
             
             <div id="review">
             <h1>Customer reviews</h1>
             <hr>
             ${selectedProduct.reviews.map(
                 (review)=>`
-                    <div id="rating">${"❤️".repeat(review.rateing)}${ "🖤".repeat(
+                    <div id="rating">${"❤️".repeat(review.rating)}${ "🖤".repeat(
                         5-review.rating
                     )}</div>
                     <p id="comment">${review.comment}</p>
                     <p id="nam">By <strong>${review.reviewerName}</strong> on ${new Date(review.date)}</p> 
-                          <hr>
+            <hr>
                           `
             )}
             </div>              

@@ -8,15 +8,21 @@ let password=document.getElementById("password").value;
 let errorMail=document.getElementById("errorMail");
 
 let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let passwordPattern=/(?=.[A-Z])(?=.[a-z])(?=.[0-9]).{8,}$/
 
 if(!emailPattern.test(email)){
     // alert("Invalid email");
-    errorMail.textContent="Invalid Email......";
+    errorMail.textContent="Invalid Email Please ENter a valid Email.....";
     return;
 }else{
     errorMail.textContent=" ";
 }
 
+if(!passwordPattern.test(password)){
+    // alert("Invalid email");
+    errorPWD.textContent="Password is not matching with Pattern !! ";
+    return;
+}
                 // console.log(name);
                 // console.log(email);
                 // console.log(phone);
